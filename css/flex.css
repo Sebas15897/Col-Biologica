@@ -1,0 +1,49 @@
+.flex-container {
+    margin: 3% 10%;
+    display: flex;
+    font-size: 1em;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
+
+.flex-item {
+    padding: 3%;
+    flex: 50%;
+    width: auto;
+    height: auto;
+    font-family: sans-serif;
+}
+
+.flex-item > h2 {
+    color: #038C4C;
+}
+
+.flex-item > p {
+    margin-bottom: 10px;
+}
+
+.flex-item > img {
+    width: 400px;
+    border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 100%;
+    }
+
+    .flex-item > img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    .flex-container {
+        margin: 3% 10%;
+        display: block;
+        font-size: 1em;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+}
