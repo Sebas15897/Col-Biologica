@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(/img/unnamed.jpg);
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
+
+/*Registro*/
 
 .register {
     background-color: gray;
@@ -63,4 +70,134 @@ body {
 .Buttons a:hover {
     transition: 4ms;
     color: black;
+}
+
+/* NavBar */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    /* background-color: #54ee4e; */
+    background-color: #f25c05;
+    /* border-bottom: 1px solid #e2e8f0; */
+    border-bottom: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    /* color: #f25c05; */
+    color: #f2e205;
+}
+
+.nav-link:hover {
+    color: #f20c0c;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4.5rem;
+        flex-direction: column;
+        background-color: #f25c05;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 15;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/*Banner*/
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/tucan_0.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
