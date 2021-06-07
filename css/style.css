@@ -92,6 +92,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    z-index: 12;
 }
 
 .hamburger {

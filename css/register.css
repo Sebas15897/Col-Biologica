@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-color: #0ABF04;
+    background-size: 130%;
+}
+
+.register {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 0px 0px #038C4C;
+}
+
+.title h3 {
+    text-align: center;
+    color: #038C4C;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.title i {
+    color: #038C4C;
+    margin-left: 40%;
+    font-size: 80px;
+    padding: 5px;
+}
+
+.Controls {
+    margin: 5px;
+    padding: 10px 15px;
+    width: 80%;
+    margin-left: 30px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.Buttons {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 6%;
+
+}
+
+.Buttons input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #038C4C;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 0px 0px #F2E205;
+
+}
+
+.Buttons input:hover {
+    transition: 5ms;
+    background-color: #F2E205;
+    box-shadow: 5px 5px 0px 0px #038C4C;
+    color: white;
+
+}
+
+.Buttons a {
+    text-decoration: none;
+    color: #038C4C;
+}
+
+.Buttons a:hover {
+    transition: 4ms;
+    color: #F2E205;
+}
