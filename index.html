@@ -9,6 +9,9 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/cards.css">
+        <link rel="stylesheet" href="/css/flex.css" />
+        <link rel="stylesheet" href="/css/footer.css"/>
         <title>Col-Biológica</title>
     </head>
     <body>
@@ -39,6 +42,148 @@
                 </p>
             </div>
         </div>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="/img/rachel-claire.jpg" alt="" srcset="" />
+            </div>
+            <div class="flex-item">
+                <h2>¿Qué es una colección biológica?</h2>
+                <br />
+                <p>
+                    Las colecciones biológicas son repositorios importantes de información en biodiversidad. Aunque
+                    parezca increíble, cientos de objetos de colección como especímenes, cráneos, plumas, frutos,
+                    tejidos, entre otros, guardan los secretos del mundo natural y la memoria de los ecosistemas.
+                </p>
+                <p>
+                    En otras palabras, las colecciones biológicas son conjuntos de organismos, o partes de ellos,
+                    organizados de modo a proveer informaciones acerca de la procedencia, colecta e identificación de
+                    cada uno de sus especímenes.
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="center-text lower-upper-space">Nuevas especies</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div class="a-box">
+                        <div class="img-container">
+                            <div class="img-inner">
+                                <div class="inner-skew">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <h3>El pájaro Azul</h3>
+                            <div>Un ave nativa de las cerraría, característico por su color llamativo.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="a-box">
+                        <div class="img-container">
+                            <div class="img-inner">
+                                <div class="inner-skew">
+                                    <img src="/img/oso-polar-640.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <h3>Oso polar del caribe</h3>
+                            <div>Es único en su especie. Pues aunque es polar, vive en el desierto de la Guajira.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="a-box">
+                        <div class="img-container">
+                            <div class="img-inner">
+                                <div class="inner-skew">
+                                    <img src="/img/rosa-640.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <h3>Rosa de Eleno</h3>
+                            <div>Aunque parece una rosa común, es venenosa.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container"></div>
+        </section>
+
+        <main>
+            <h2 class="center-text lower-upper-space">Nuevas colecciones</h2>
+            <ul id="cards">
+                <li class="card" id="card_1">
+                    <div class="card__content">
+                        <div>
+                            <h3>Flores</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae magni quos error
+                                distinctio tempore doloribus veritatis fugit, esse accusamus. Saepe a adipisci itaque
+                                harum, quam ab?
+                            </p>
+                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+                        </div>
+                        <figure>
+                            <img src="/img/flowers-640.jpg" alt="flores-coleccion" />
+                        </figure>
+                    </div>
+                </li>
+                <li class="card" id="card_2">
+                    <div class="card__content">
+                        <div>
+                            <h3>Semillas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+                        </div>
+                        <figure>
+                            <img src="/img/semillas-640.jpg" alt="semillas-coleccion" />
+                        </figure>
+                    </div>
+                </li>
+                <li class="card" id="card_3">
+                    <div class="card__content">
+                        <div>
+                            <h3>Aves</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati natus nam explicabo
+                                reprehenderit suscipit earum dolores quos delectus ipsam fugit voluptatibus vero ex a
+                                nisi aut alias eligendi magni nesciunt, ad quo ducimus consequuntur enim inventore. Rem
+                                cumque voluptates quae voluptas consequuntur obcaecati tempora, modi perferendis dolorum
+                                dignissimos quam, vero iusto quod aperiam quos at nemo quibusdam quas doloremque ullam!
+                            </p>
+                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+                        </div>
+                        <figure>
+                            <img src="/img/aves-640.jpg" alt="aves-coleccion" />
+                        </figure>
+                    </div>
+                </li>
+                <li class="card" id="card_4">
+                    <div class="card__content">
+                        <div>
+                            <h3>Plantas</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
+                        </div>
+                        <figure>
+                            <img src="/img/plantas-640.jpg" alt="plantas-coleccion" />
+                        </figure>
+                    </div>
+                </li>
+            </ul>s
+        </main>
+
+        <footer class="footer">
+            <p>Col-Biológica 2021</p>
+        </footer>
         <script src="/js/script.js"></script>
     </body>
 </html>

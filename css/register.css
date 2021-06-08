@@ -84,3 +84,10 @@ body {
     transition: 4ms;
     color: #F2E205;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(../img/tucan_0.jpg);
+        background-size: 150%;
+    }
+}
