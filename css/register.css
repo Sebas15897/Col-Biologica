@@ -5,10 +5,10 @@
 }
 
 body {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/tucan_0.jpg);
     background-repeat: no-repeat;
     background-color: #0ABF04;
-    background-size: 130%;
+    background-size: 100%;
 }
 
 .register {
@@ -85,9 +85,28 @@ body {
     color: #F2E205;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1113px) {
     body {
         background-image: url(../img/tucan_0.jpg);
-        background-size: 150%;
+        background-size: 220%;
+    }
+
+    .bar {
+        background-color: #038C4C;
+    }
+}
+
+@media (max-width: 757px) {
+    body {
+        background-image: url(../img/tucan_0.jpg);
+        background-size: 280%;
+    }
+
+    .bar {
+        background-color: #038C4C;
+    }
+
+    .nav-logo {
+        color: #038C4C;
     }
 }
