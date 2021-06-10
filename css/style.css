@@ -12,66 +12,6 @@ html {
     margin: 0;
     font-family: sans-serif, Arial, Helvetica;
 }
-
-/*Registro*/
-
-.register {
-    background-color: gray;
-    width: 400px;
-    margin: auto;
-    margin-top: 100px;
-    padding: 30px;
-    border-radius: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.title h3 {
-    text-align: center;
-    color: white;
-    padding: 5px;
-    font-size: 30px;
-}
-
-.title i {
-    color: white;
-    margin-left: 40%;
-    font-size: 80px;
-    padding: 5px;
-}
-
-.Controls {
-    margin: 5px;
-    padding: 10px 15px;
-    text-align: center;
-    width: 80%;
-    margin-left: 30px;
-    font-size: 15px;
-}
-
-.Buttons {
-    margin: 5px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 6%;
-}
-
-.Buttons input {
-    padding: 5px;
-    margin: 10px;
-    font-size: 17px;
-    color: gray;
-}
-
-.Buttons a {
-    text-decoration: none;
-    color: white;
-}
-
-.Buttons a:hover {
-    transition: 4ms;
-    color: black;
-}
-
 /* NavBar */
 
 li {
@@ -134,7 +74,7 @@ a {
 .nav-logo {
     font-size: 1.8rem;
     font-weight: 500;
-    color: #f25c05;
+    color: #038c4c;
 }
 
 @media only screen and (max-width: 768px) {
@@ -200,4 +140,13 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+/*footer*/
+footer {
+    padding: 10px 5px;
+    background-color: #f1f1f1;;
+    text-align: center;
+    color: #038c4c;
+    font-size: 20px;
 }
