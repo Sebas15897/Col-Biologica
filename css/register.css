@@ -111,3 +111,17 @@ body {
     }
 }
 
+@media only screen and (max-width: 515px) {
+    .register {
+        width: 300px;
+    }
+}
+
+/*footer*/
+footer {
+    padding: 10px 5px;
+    background-color: #f1f1f1;;
+    text-align: center;
+    color: #038c4c;
+    font-size: 20px;
+}
