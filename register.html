@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/cards.css">
-    <link rel="stylesheet" href="/css/flex.css">
     <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
     <title>Register Col-Biologica</title>
 </head>
 <body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="/index.html" class="nav-logo">Col-Biológica</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/Login.html" class="nav-link">Iniciar sesión</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Explora colecciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Guarda tu colección</a></li>
+                <li class="nav-item"><a href="/somos.html" class="nav-link">Quienes somos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
     <section class="register">
         <form action="#" method="POST">
             <div class="title">
@@ -23,10 +39,11 @@
             <input class="Controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico">
             <input class="Controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
             <div class="Buttons">
-                <input class="Button" type="button" value="Registro">
+                <input class="Button" type="submit" value="Registro">
                 <p><a href="/login.html">Inicie sesion</a></p>
             </div>
         </form>
     </section>
+    <script src="/js/script.js"></script>
 </body>
 </html>
