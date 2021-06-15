@@ -1,0 +1,11 @@
+.Buttons p {
+    margin: 10px 20px;
+    background-color: #0ABF04;
+    border-bottom: 5px solid #F2E205;
+    color: gray;
+}
+
+.Buttons a {
+    color: white;
+    padding: 20px 12px;
+}
