@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/css/register.css">
     <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
-    <title>Inicio Col-Biologica</title>
+    <title>ColBiológica</title>
 </head>
 <body>
 
@@ -16,20 +16,20 @@
     </header>
 
     <section class="register">
-        <form action="#" method="POST">
+        <form id = "formi">
             <div class="title">
                 <i class="fas fa-dove"></i>
                 <h3>¡Bienvenidos a Col-biologica</h3>
             </div>
-            <input class="Controls" type="text" name="Nombres" id="Nombres" placeholder="Usuario o correo electronico">
-            <input class="Controls" type="text" name="Apellidos" id="Apellidos" placeholder="Contraseña">
+            <input class="Controls" type="text" name="Correo" id="Nombres" placeholder="Usuario o correo electronico" required>
+            <input class="Controls" type="password" name="Contraseña" id="Apellidos" placeholder="Contraseña" required>
             <div class="Buttons">
-                <input class="Button" type="button" value="Inicio">
+                <input class="Button" type="submit" value="Inicio">
                 <p><a href="/register.html">Registro</a></p>
             </div>
         </form>
     </section>
-
+    <script src="controller/controllerLogin.js"></script>
     <script>
         $(document).ready(function () {
             $('.menuContainer').load('./nav.html');
