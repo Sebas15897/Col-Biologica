@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/register.css">
     <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <title>Register Col-Biologica</title>
+    <title>ColBiológica</title>
 </head>
 <body>
 
@@ -16,22 +16,22 @@
 </header>
     
     <section class="register">
-        <form action="#" method="POST">
+        <form id = "formu">
             <div class="title">
                 <i class="fas fa-dove"></i>
                 <h3>Registro</h3>
             </div>
-            <input class="Controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre">
-            <input class="Controls" type="text" name="Apellidos" id="Apellidos" placeholder="Su apellido">
-            <input class="Controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico">
-            <input class="Controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
+            <input class="Controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre" required>
+            <input class="Controls" type="text" name="Apellidos" id="Apellidos" placeholder="Su apellido" required>
+            <input class="Controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico" required>
+            <input class="Controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" required>
             <div class="Buttons">
                 <input class="Button" type="submit" value="Registro">
                 <p><a href="/login.html">Inicie sesion</a></p>
             </div>
         </form>
     </section>
-
+    <script src="controller/controllerRegister.js"></script>
     <script>
         $(document).ready(function () {
             $('.menuContainer').load('./nav.html');
