@@ -1,9 +1,9 @@
 .flex-container {
     margin: 3% 10%;
     display: flex;
-    font-size: 1em;
+    font-size: 17px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #e9e8e8;
     border-radius: 25px;
 }
 
@@ -12,8 +12,9 @@
     flex: 50%;
     width: auto;
     height: auto;
-    font-family: sans-serif;
 }
+
+
 
 .flex-item > h2 {
     color: #038C4C;
