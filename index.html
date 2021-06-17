@@ -1,55 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/cards.css">
-        <link rel="stylesheet" href="/css/flex.css" />
-        <link rel="stylesheet" href="/css/footer.css"/>
-        <title>Col-Biológica</title>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="navbar">
-                <a href="#" class="nav-logo">Col-Biológica</a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="/login.html" class="nav-link">Iniciar sesión</a></li>
-                    <li class="nav-item"><a href="/evento.html" class="nav-link">Explora colecciones</a></li>
-                    <li class="nav-item"><a href="/evento.html" class="nav-link">Guarda tu colección</a></li>
-                    <li class="nav-item"><a href="/somos.html" class="nav-link">Quienes somos</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/galery.css">
+    <link rel="stylesheet" href="/css/flex.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Col-biológica</title>
+</head>
+<body>
+    <header>
+        <div class="menuContainer"></div>
+    </header>
+    <section>
         <div class="banner">
-            <div class="banner-text">
-                <h1>Col-Biológica</h1>
-                <br />
-                <p>
-                    ¿Estas buscando un lugar donde reservar tus colecciones biológicas? Col-Bióloga es para ti,
-                    registrarte gratis y empieza a guardas tus colecciones. Nuestro sistema confiable tiene todo lo que
-                    necesitas.
-                </p>
+            <div class="banner-text ">
+                <div class="items"></div>
+                    <img src="/img/colbiologicaLogo2.svg" alt="">
+                        <p>¿Eres una organización, un profesional de las ciencias biológicas o un naturalista independiente y quieres llevar un registro en la nube de tu colección biológica?<p>
+                            <br />
+                        <p>¡Colbiológica es para ti!</p>
+                        <br />
+                        <p>Crea, gestiona, comparte y publica tu colección biológica completamente gratis. Conozcamos y preservemos juntos a la biodiversidad.</p>
+                </div>
+                <div class="apoyo">
+                    <p><a href="#">Apoyanos</a></p>
+                </div>
             </div>
         </div>
-
+    </section>
+    <section class="coleccion">
         <div class="flex-container">
             <div class="flex-item">
-                <img src="/img/rachel-claire.jpg" alt="" srcset="" />
+                <img src="/img/mari.png" alt="" srcset=""/>
             </div>
             <div class="flex-item">
                 <h2>¿Qué es una colección biológica?</h2>
-                <br />
+                <br/>
                 <p>
                     Las colecciones biológicas son repositorios importantes de información en biodiversidad. Aunque
                     parezca increíble, cientos de objetos de colección como especímenes, cráneos, plumas, frutos,
@@ -62,128 +53,80 @@
                 </p>
             </div>
         </div>
+    </section>
 
-        <section>
-            <h2 class="center-text lower-upper-space">Nuevas especies</h2>
-            <div class="flex-container">
-                <div class="flex-item">
-                    <div class="a-box">
-                        <div class="img-container">
-                            <div class="img-inner">
-                                <div class="inner-skew">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-container">
-                            <h3>El pájaro Azul</h3>
-                            <div>Un ave nativa de las cerraría, característico por su color llamativo.</div>
-                        </div>
+    <section class="galery">
+        <h2>Explora colecciones biológicas</h2>
+        <div class="container">
+            <div class="item">
+                <img src="/img/vertebrado.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>vertebrados</h3>
+                        <p>Los vertebrados son un subfilo muy diverso de cordados que comprende a los animales con espina dorsal o columna vertebral, compuesta de vértebras. Incluye unas 72.327 especies actuales​ y muchos fósiles. Los vertebrados han logrado adaptarse a diferentes ambientes, incluidos los más difíciles e inhóspitos.</p>
+                        <p><a href="#">ver más</a></p>
                     </div>
-                </div>
-                <div class="flex-item">
-                    <div class="a-box">
-                        <div class="img-container">
-                            <div class="img-inner">
-                                <div class="inner-skew">
-                                    <img src="/img/oso-polar-640.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-container">
-                            <h3>Oso polar del caribe</h3>
-                            <div>Es único en su especie. Pues aunque es polar, vive en el desierto de la Guajira.</div>
-                        </div>
+            </div>
+            
+            <div class="item">
+                <img src="/img/invertebrados.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Invertebrados</h3>
+                        <p>Se denomina invertebrados a todos aquellos animales que no se encuadran dentro del subfilo Vertebrata del filo Chordata. El nombre alude a que, a diferencia de estos últimos, carecen de columna vertebral o notocorda, y de esqueleto interno articulado. El término es aplicable al 95 % de todas las especies de animales.​</p>
+                        <p><a href="#">ver más</a></p>
                     </div>
-                </div>
-                <div class="flex-item">
-                    <div class="a-box">
-                        <div class="img-container">
-                            <div class="img-inner">
-                                <div class="inner-skew">
-                                    <img src="/img/rosa-640.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-container">
-                            <h3>Rosa de Eleno</h3>
-                            <div>Aunque parece una rosa común, es venenosa.</div>
-                        </div>
+            </div>
+            
+            <div class="item">
+                <img src="/img/plantas.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Plantas</h3>
+                        <p>En biología, se denominan plantas a los seres vivos mayormente fotosintéticos sin capacidad locomotora cuyas paredes celulares se componen principalmente de celulosa. Taxonómicamente están agrupadas en el reino Plantae y, como tal, constituyen un grupo monofilético eucariota conformado por las plantas terrestres y las algas que se relacionan con ellas.</p>
+                        <p><a href="#">ver más</a></p>
                     </div>
+            </div>
+            
+            <div class="item">
+                <img src="/img/hongos.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Hongos</h3>
+                        <p>En biología, el término Fungi ​​ se utiliza para designar a un taxón o grupo de organismos eucariotas entre los que se encuentran los mohos, las levaduras y los organismos productores de setas. Están clasificados en un reino distinto al de las plantas, animales y protistas.</p>
+                        <p><a href="#">ver más</a></p>
                 </div>
             </div>
-            <div class="flex-container"></div>
-        </section>
+            
+            
+            <div class="item">
+                <img src="/img/micro.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Micro organismos</h3>
+                        <p>Un microorganismo, también llamado microbio, o también microbionte, es un ser vivo o un sistema biológico que solo puede visualizarse con el microscopio. Son organismos dotados de individualidad que presentan, a diferencia de las plantas y los animales superiores, una organización biológica elemental.</p>
+                        <p><a href="#">ver más</a></p>
+                    </div>
+            </div>
+            
+            <div class="item">
+                <img src="/img/mari.png" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Últimas publicaciones</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p><a href="#">ver más</a></p>
+                    </div>
+            </div>
+        </div>
+    </section>
 
-        <main>
-            <h2 class="center-text lower-upper-space">Nuevas colecciones</h2>
-            <ul id="cards">
-                <li class="card" id="card_1">
-                    <div class="card__content">
-                        <div>
-                            <h3>Flores</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae magni quos error
-                                distinctio tempore doloribus veritatis fugit, esse accusamus. Saepe a adipisci itaque
-                                harum, quam ab?
-                            </p>
-                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
-                        </div>
-                        <figure>
-                            <img src="/img/flowers-640.jpg" alt="flores-coleccion" />
-                        </figure>
-                    </div>
-                </li>
-                <li class="card" id="card_2">
-                    <div class="card__content">
-                        <div>
-                            <h3>Semillas</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
-                        </div>
-                        <figure>
-                            <img src="/img/semillas-640.jpg" alt="semillas-coleccion" />
-                        </figure>
-                    </div>
-                </li>
-                <li class="card" id="card_3">
-                    <div class="card__content">
-                        <div>
-                            <h3>Aves</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati natus nam explicabo
-                                reprehenderit suscipit earum dolores quos delectus ipsam fugit voluptatibus vero ex a
-                                nisi aut alias eligendi magni nesciunt, ad quo ducimus consequuntur enim inventore. Rem
-                                cumque voluptates quae voluptas consequuntur obcaecati tempora, modi perferendis dolorum
-                                dignissimos quam, vero iusto quod aperiam quos at nemo quibusdam quas doloremque ullam!
-                            </p>
-                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
-                        </div>
-                        <figure>
-                            <img src="/img/aves-640.jpg" alt="aves-coleccion" />
-                        </figure>
-                    </div>
-                </li>
-                <li class="card" id="card_4">
-                    <div class="card__content">
-                        <div>
-                            <h3>Plantas</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p><a href="#top" class="btn btn--accent">Read more</a></p>
-                        </div>
-                        <figure>
-                            <img src="/img/plantas-640.jpg" alt="plantas-coleccion" />
-                        </figure>
-                    </div>
-                </li>
-            </ul>
-        </main>
+    <footer>
+        <div class="footerContainer"></div>
+    </footer>
 
-        <footer>
-            <p>Col-Biológica 2021</p>
-        </footer>
-        <script src="/js/script.js"></script>
-    </body>
+    <script>
+        $(document).ready(function () {
+            $('.menuContainer').load('./nav.html');
+        });
+
+        $(document).ready(function () {
+            $('.footerContainer').load('./footer.html');
+        });
+    </script>
+</body>
 </html>
