@@ -1,0 +1,67 @@
+.banner {
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 6% 0;
+    display: flex;
+    opacity: 3ms;
+}
+
+.banner-text {
+    width: 60%;
+    text-align: left;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(19, 18, 18, 0.116);
+    border-radius: 1%;
+}
+
+
+.banner-text img{
+    background-color: #038C4C;
+    border-radius: 10%;
+    height: 15vw;
+    width: auto;
+    margin-bottom: 2vw;
+}
+
+.apoyo {
+    background-color: #038C4C;
+    height: 30%;
+    width: 10%;
+    text-align: center;
+
+}
+
+.apoyo a {
+    margin: 5px 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-text {
+    text-align: center;
+    margin-left: 20%;
+    }
+
+    .apoyo {
+        visibility: hidden;
+    }
+
+    .banner-text img {
+        height: 25vw;
+    }
+
+    .banner {
+        background-size: 180%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner {
+        background-size: 270%;
+    }
+}
