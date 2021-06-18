@@ -57,10 +57,21 @@
     these tools has undoubtedly improved our technical skills and our understanding of how the World
     Wide Web works.
   </p>
+
   <table>
     <tr>
+      <th>Libraries</th>
+      <th>Languages</th>
+      <th>Platforms</th>
+    </tr>
+    <tr>
       <td>
-        <h3>Languages</h3>
+        <ul>
+          <li>Google Chart</li>
+          <li>Google Font</li>
+        </ul>
+      </td>
+      <td>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -70,18 +81,10 @@
         </ul>
       </td>
       <td>
-        <h3>Platforms</h3>
         <ul>
           <li>MySQL</li>
           <li>APACHE</li>
           <li>GitHub</li>
-        </ul>
-      </td>
-      <td>
-        <h3>Libraries</h3>
-        <ul>
-          <li>Google Chart</li>
-          <li>Google Font</li>
         </ul>
       </td>
     </tr>

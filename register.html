@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register.css">
-    <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/nav.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Start favicon Colbiologica -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -27,16 +27,17 @@
     <section class="register">
         <form id = "formu">
             <div class="title">
-                <i class="fas fa-dove"></i>
-                <h3>Registro</h3>
+                <img src="/img/colbiologicaLogo1.svg" alt="">
             </div>
-            <input class="Controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre" required>
-            <input class="Controls" type="text" name="Apellidos" id="Apellidos" placeholder="Su apellido" required>
-            <input class="Controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico" required>
-            <input class="Controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" required>
-            <div class="Buttons">
-                <input class="Button" type="submit" value="Registro">
-                <p><a href="/login.html">Inicie sesion</a></p>
+            <div class="im">
+                <input class="Controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre" required>
+                <input class="Controls" type="text" name="Apellidos" id="Apellidos" placeholder="Su apellido" required>
+                <input class="Controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico" required>
+                <input class="Controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" required>
+                <div class="Buttons">
+                    <input class="Button" type="submit" value="Registro">
+                    <p><a class="ini" href="/login.html">Inicie sesion</a></p>
+                </div>
             </div>
         </form>
     </section>
@@ -44,6 +45,10 @@
     <script>
         $(document).ready(function () {
             $('.menuContainer').load('./nav.html');
+        });
+
+        $(document).ready(function () {
+            $('.footerContainer').load('./footer.html');
         });
     </script>
 </body>

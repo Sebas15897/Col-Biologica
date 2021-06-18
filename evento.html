@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/register.css">
-    <link rel="stylesheet" href="/css/evento.css">
     <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
     <title>Registrate o inicia sesión</title>
     <!-- Start favicon Colbiologica -->
@@ -21,27 +20,14 @@
 </head>
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="/index.html" class="nav-logo">Col-Biológica</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="/login.html" class="nav-link">Iniciar sesión</a></li>
-                <li class="nav-item"><a href="/evento.html" class="nav-link">Explora colecciones</a></li>
-                <li class="nav-item"><a href="/evento.html" class="nav-link">Guarda tu colección</a></li>
-                <li class="nav-item"><a href="/somos.html" class="nav-link">Quienes somos</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+    <header>
+        <div class="menuContainer"></div>
     </header>
 
     <section class="register">
         <form action="#" method="POST">
             <div class="title">
-                <i class="fas fa-dove"></i>
+                <img src="/img/colbiologicaLogo1.svg" alt="">
                 <h3>¡Hola!, antes de continuar registrate o inicia sesión</h3>
             </div>
             <div class="Buttons">
@@ -50,6 +36,12 @@
             </div>
         </form>
     </section>
-    <script src="/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.menuContainer').load('./nav.html');
+        });
+    </script>
+
 </body>
 </html>
