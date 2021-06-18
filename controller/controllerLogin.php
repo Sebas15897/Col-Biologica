@@ -27,6 +27,8 @@
         $_SESSION['name'] = $nameUser;
         $_SESSION['id'] = $idUser;
 
+        setcookie("UserName", $nameUser, time()+3600, "/");
+
         $json = 'ok';
         $jsonstring = json_encode($json);
         echo $jsonstring;

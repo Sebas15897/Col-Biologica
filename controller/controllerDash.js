@@ -19,10 +19,11 @@ function mostraColecciones(params) {
                 divCollection.insertAdjacentHTML('beforeend',
                 `
                 <div class="tarjeta">
-                    <img src="${element['co_defaultImg']}" alt="Colección ${element['co_name']}">
-                    <h3>${element['co_name']}</h3>
-                    <p>${'co_description'}</p>
-                </div>'
+                    <a href="coleccion.php?id=${element['co_id']}">
+                        <img src="../archivos/${element['co_logo']}" alt="Colección ${element['co_name']}">
+                        <h2>${element['co_name']}</h2>
+                    <a/>
+                </div>
 
                 `);
             });
@@ -31,9 +32,28 @@ function mostraColecciones(params) {
     })
     .catch(err => {
         console.log(err)
-    });
+    })
+}
+
+function leerCookie(nombre) {
+    var lista = document.cookie.split(";");
+    for (i in lista) {
+        var busca = lista[i].search(nombre);
+        if (busca > -1) {micookie=lista[i]}
+        }
+    var igual = micookie.indexOf("=");
+    var valor = micookie.substring(igual+1);
+    return valor;
+    }
+
+function saludo() {
+    var nombreUser = leerCookie("UserName");
+    var saludoCampo = document.getElementById("saludo");
+    var saludo = `Hola ${nombreUser}!`;
+    saludoCampo.innerText = saludo;
 }
 
 ( function() {
     mostraColecciones();
+    saludo();
 } ) ();

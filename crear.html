@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dash.css">
+    <script src="https://kit.fontawesome.com/8446c158db.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/crear.css">
+    <title>Colbiológica</title>
+    <!-- Start favicon Colbiologica -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicon Colbiologica -->   
+</head>
+<body>
+    <header>
+        <div class="menuContainer"></div>
+    </header>
+
+    <div id="content">
+        <form id=CrearColeccion method="post" enctype="multipart/form-data">
+            <input type="text" name="Nombre" placeholder="Nombre de la colección" required>
+            <input type="text" name="Propietario" placeholder="Propietario" required>
+            <input type="text" name="Curador" placeholder="Curador" required>
+            <select name="Tipo">
+                <option value="Colección ictiológica">Colección ictiológica</option>
+                <option value="Colección herpetológica">Colección herpetológica</option>
+                <option value="Colección ornitológica">Colección ornitológica</option>
+                <option value="Colección mastozoológica">Colección mastozoológica</option>
+                <option value="Jardín botánico">Jardín botánico</option>
+                <option value="Herbario">Herbario</option>
+                <option value="Colección de tejidos">Colección de tejidos</option>
+                <option value="Etnofitoteca">Etnofitoteca</option>
+                <option value="Lianoteca">Lianoteca</option>
+                <option value="Palinoteca">Palinoteca</option>
+                <option value="Antoteca">Antoteca</option>
+            </select>
+            <input type="text" name="Descripcion" placeholder="Descripción" required>
+            <input type="text" name="Direccion" placeholder="Dirección" required>
+            <input type="text" name="Ciudad" placeholder="Ciudad, pais" required>
+            <input type="email" name="Email" placeholder="email" required>
+            <input type="text" name="Numero" placeholder="Numero Celular" required>
+            <p>Logo:</p>
+            <input type="file" name="Logo" required>
+            <p>Fotos:</p>
+            <input type="file" name="Foto1">
+            <p>(opcional):</p>
+            <input type="file" name="Foto2">
+            <input type="file" name="Foto3">
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerContainer"></div>
+    </footer>
+    
+    <script src="controller/controllerCollections.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menuContainer').load('./nav.html');
+        });
+
+        $(document).ready(function () {
+            $('.footerContainer').load('./footer.html');
+        });
+    </script>
+</body>
+</html>
