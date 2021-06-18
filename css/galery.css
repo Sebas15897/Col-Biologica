@@ -14,7 +14,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.galery h2 {
+.galery h3 {
     text-align: center;
     color: #038C4C;
 }
@@ -56,22 +56,20 @@ body{
     opacity: 0;
 }
 
-.item:hover:after{
-    opacity: 1;
-    transform: scale(1);
-}
-
 .item:hover {
     transform: scale(1.05);
 }
 
 .item-text{
     padding: 1em;
+    text-align: center;
 }
 
 
 .item-img{
-    max-width: 100%;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
     display: block;
 }
 
