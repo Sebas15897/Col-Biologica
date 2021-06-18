@@ -1,4 +1,8 @@
-/*Banner*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/ave-777.jpg);

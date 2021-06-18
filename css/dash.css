@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
+* {
+  font-family: 'Nunito', sans-serif;
+}
 .logooo {
     color: white;
     text-align: center;
