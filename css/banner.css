@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 .banner {
     background-image: url(/img/hero.jpg);
     background-repeat: no-repeat;
@@ -7,6 +13,7 @@
     padding: 6% 0;
     opacity: 3ms;
     display: flex;
+    font-family: 'Nunito', sans-serif;
 }
 
 .banner-text {

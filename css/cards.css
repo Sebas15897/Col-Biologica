@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
 :root {
     --card-height: 40vw;
     --card-margin: 4vw;
     --card-top-offset: 1em;
     --numcards: 4;
     --outline-width: 0px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .center-text {
