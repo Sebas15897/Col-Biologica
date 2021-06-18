@@ -27,7 +27,6 @@ nav {
     padding: 15px 30px;
     position: fixed;
     z-index: 100;
-    margin: 0;
     box-shadow: rgb(211, 211, 211) 2px 2px 2px;
     top: 0%;
 }
