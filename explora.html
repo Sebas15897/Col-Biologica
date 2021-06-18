@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/explora.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Explora colecciones</title>
+</head>
+<body>
+    <header>
+        <div class="menuContainer"></div>
+    </header>
+
+    <section class="explora">
+        <div class="items">
+            <h2>Explora colecciones biológicas</h2>
+            <div class="busqueda">
+                <form action="#">
+                    <input class="ite" type="search" name="Busqueda por nombre" id="" placeholder="Busqueda por nombre">
+                    <input class="itee" type="submit" value="Buscar">
+                </form>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <img src="/img/vertebrado.jpg" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>vertebrados</h3>
+                            <p>Los vertebrados son un subfilo muy diverso de cordados que comprende a los animales con espina dorsal o columna vertebral, compuesta de vértebras. Incluye unas 72.327 especies actuales​ y muchos fósiles. Los vertebrados han logrado adaptarse a diferentes ambientes, incluidos los más difíciles e inhóspitos.</p>
+                            <p><a href="#">ver más</a></p>
+                        </div>
+                </div>
+                
+                <div class="item">
+                    <img src="/img/invertebrados.jpg" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>Invertebrados</h3>
+                            <p>Se denomina invertebrados a todos aquellos animales que no se encuadran dentro del subfilo Vertebrata del filo Chordata. El nombre alude a que, a diferencia de estos últimos, carecen de columna vertebral o notocorda, y de esqueleto interno articulado. El término es aplicable al 95 % de todas las especies de animales.​</p>
+                            <p><a href="#">ver más</a></p>
+                        </div>
+                </div>
+                
+                <div class="item">
+                    <img src="/img/plantas.jpg" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>Plantas</h3>
+                            <p>En biología, se denominan plantas a los seres vivos mayormente fotosintéticos sin capacidad locomotora cuyas paredes celulares se componen principalmente de celulosa. Taxonómicamente están agrupadas en el reino Plantae y, como tal, constituyen un grupo monofilético eucariota conformado por las plantas terrestres y las algas que se relacionan con ellas.</p>
+                            <p><a href="#">ver más</a></p>
+                        </div>
+                </div>
+                
+                <div class="item">
+                    <img src="/img/hongos.jpg" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>Hongos</h3>
+                            <p>En biología, el término Fungi ​​ se utiliza para designar a un taxón o grupo de organismos eucariotas entre los que se encuentran los mohos, las levaduras y los organismos productores de setas. Están clasificados en un reino distinto al de las plantas, animales y protistas.</p>
+                            <p><a href="#">ver más</a></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/img/micro.jpg" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>Micro organismos</h3>
+                            <p>Un microorganismo, también llamado microbio, o también microbionte, es un ser vivo o un sistema biológico que solo puede visualizarse con el microscopio. Son organismos dotados de individualidad que presentan, a diferencia de las plantas y los animales superiores, una organización biológica elemental.</p>
+                            <p><a href="#">ver más</a></p>
+                        </div>
+                </div>
+                
+                <div class="item">
+                    <img src="/img/mari.png" alt="" class="item-img">
+                        <div class="item-text">
+                            <h3>Últimas publicaciones</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <p><a href="#">ver más</a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer"></div>
+    </footer>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.menuContainer').load('./nav.html');
+    });
+
+    $(document).ready(function () {
+        $('.footerContainer').load('./footer.html');
+    });
+
+</script>
+</html>
