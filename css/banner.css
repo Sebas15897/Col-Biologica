@@ -17,6 +17,7 @@
 }
 
 .banner-text {
+    margin-top: 8.5vw;
     width: 60%;
     margin-left: 20%;
     color: white;
@@ -34,11 +35,10 @@
     width: auto;
     margin: 4vw 3vw;
     margin-bottom: 2vw;
-    background-color: #038C4C;
 }
 
 .items {
-    color: gray;
+    color: #353535;
     margin: 2vw 3vw;
 }
 
@@ -54,6 +54,14 @@
 .apoyo a {
     margin: 5px 10px;
     color: white;
+}
+
+.apoyo:hover {
+    background-color: white;
+}
+
+.apoyo a:hover {
+    color: #038C4C;
 }
 
 @media only screen and (max-width: 768px) {
