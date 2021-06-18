@@ -214,13 +214,17 @@ main {
     display: inline-block;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0px;
+    padding: 20px;
     transform: skew(0deg, 13deg);
     font-size: 0px;
     margin: 30px 0px 0px 0px;
     background: #c8c2c2;
     height: 250px;
-    width: 200px;
+    width: 290px;
+}
+
+.inner-skew img {
+    width: 90%;
 }
 
 .text-container {
