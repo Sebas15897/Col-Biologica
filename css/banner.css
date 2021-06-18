@@ -10,14 +10,16 @@
     background-size: 100%;
     height: 100%;
     width: 100%;
-    padding: 6% 0;
+
     opacity: 3ms;
     display: flex;
     font-family: 'Nunito', sans-serif;
+    margin-top: 60px;
 }
 
 .banner-text {
-    margin-top: 8.5vw;
+    margin-top: 8%;
+    margin-bottom: 8%;
     width: 60%;
     margin-left: 20%;
     color: white;
