@@ -1,3 +1,4 @@
+/*importing fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 *{
@@ -9,10 +10,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/*defining body values*/
 body{
     background-color: #eee;
     font-family: 'Open Sans', sans-serif;
 }
+
+/*defining galery values*/
 
 .galery h2 {
     text-align: center;
@@ -97,15 +101,14 @@ body{
     display: block;
 }
 
+/*defining responsive design*/
 
 @media screen and (max-width: 768px) {
     
     .items h2 {
         margin-top: 15vw;
     }
-    
-    
-    }
+}
 
 
 @media screen and (min-width: 590px) {
@@ -113,16 +116,11 @@ body{
     .container{
     grid-template-columns: repeat(2, 1fr);
     }
-    
-    
-    }
-
-
+}
 
 @media screen and (min-width: 960px) {
     
     .container{
         grid-template-columns: repeat(3, 1fr);
     }
-    
 }
