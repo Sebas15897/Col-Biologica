@@ -13,10 +13,11 @@
     //Guarda el nombre del usuario para usarlo como cookie
     $row = $sqlA->fetch_array();
     $nameUser = $row['us_name'];
+    $idUser = $row['us_id'];
 
     if ($rowA == 0) {
         //Si los datos son erroneos devuelve error
-        $json = $password;
+        $json = 'invalid';
         $jsonstring = json_encode($json);
         echo $jsonstring;
     }else {
@@ -24,6 +25,9 @@
         session_start();
         $_SESSION['logueado'] = TRUE;
         $_SESSION['name'] = $nameUser;
+        $_SESSION['id'] = $idUser;
+
+        setcookie("UserName", $nameUser, time()+3600, "/");
 
         $json = 'ok';
         $jsonstring = json_encode($json);
