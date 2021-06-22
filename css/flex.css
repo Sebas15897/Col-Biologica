@@ -1,3 +1,4 @@
+/*import source*/
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 * {
@@ -34,6 +35,8 @@
     width: 400px;
     border-radius: 5%;
 }
+
+/*responsive design*/
 
 @media (max-width: 768px) {
     .flex-item {

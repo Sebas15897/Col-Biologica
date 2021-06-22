@@ -27,7 +27,6 @@ body{
     margin-right: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
@@ -79,8 +78,7 @@ body{
     .container{
     grid-template-columns: repeat(2, 1fr);
     }
-    
-    }
+}
 
 
 
